@@ -5,8 +5,10 @@
  */
 package zw.co.hitrac.sas.business.domain;
 
+
 import java.util.Arrays;
 import java.util.List;
+
 
 /**
  *
@@ -19,6 +21,7 @@ public enum Subjects {
     CHEMISTRY("Chemistry"),
     BIOLOGY("Biology"),
     GEOGRAPHY("Geography"),
+
     BUSINESS_STUDIES("Business Studies"),
     ECONOMICS("Economics"),
     DIVINITY("Divinity"),
@@ -48,6 +51,6 @@ public enum Subjects {
         
         return getMySubject();
 }
-    
+
     
 }

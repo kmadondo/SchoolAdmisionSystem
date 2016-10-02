@@ -5,17 +5,17 @@
  */
 package zw.co.hitrac.sas.web.pages;
 
+
 import org.apache.wicket.markup.html.form.Button;
 import org.apache.wicket.markup.html.form.Form;
 import org.apache.wicket.markup.html.form.TextField;
 import org.apache.wicket.model.CompoundPropertyModel;
+import zw.co.hitrac.sas.SaSPageParametersUtil;
+import zw.co.hitrac.sas.business.domain.Student;
 import org.apache.wicket.request.mapper.parameter.PageParameters;
 import org.apache.wicket.spring.injection.annot.SpringBean;
-import zw.co.hitrac.sas.SaSPageParametersUtil;
-import zw.co.hitrac.sas.business.domain.Grade;
-import zw.co.hitrac.sas.business.domain.Student;
 import zw.co.hitrac.sas.business.service.StudentService;
-import zw.co.hitrac.sas.web.model.GradeModel;
+
 import zw.co.hitrac.sas.web.model.StudentModel;
 
 /**
@@ -30,6 +30,7 @@ public class StudentEditPage extends TemplatePage {
 
     public StudentEditPage(PageParameters pageParameter) {
         super(pageParameter);
+
         createModel(pageParameter);
 
     }
@@ -69,5 +70,6 @@ public class StudentEditPage extends TemplatePage {
       Long id = SaSPageParametersUtil.extractId(pageParameter);
         studentModel = new StudentModel(id);
     }
+
 
 }

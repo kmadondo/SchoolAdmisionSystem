@@ -5,6 +5,7 @@
  */
 package zw.co.hitrac.sas.web.pages;
 
+
 import org.apache.wicket.markup.html.form.Button;
 import org.apache.wicket.markup.html.form.Form;
 import org.apache.wicket.markup.html.form.TextField;
@@ -16,11 +17,15 @@ import zw.co.hitrac.sas.business.domain.Subject;
 import zw.co.hitrac.sas.business.service.SubjectService;
 import zw.co.hitrac.sas.web.model.SubjectModel;
 
+import org.apache.wicket.request.mapper.parameter.PageParameters;
+
+
 /**
  *
  * @author tndangana
  */
 public class SubjectEditPage extends TemplatePage {
+
 private SubjectModel subjectModel;
 @SpringBean
 private SubjectService subjectService;
@@ -65,4 +70,5 @@ private SubjectService subjectService;
        Long id = SaSPageParametersUtil.extractId(pageParameter);
         subjectModel = new SubjectModel(id);
     }
+
 }

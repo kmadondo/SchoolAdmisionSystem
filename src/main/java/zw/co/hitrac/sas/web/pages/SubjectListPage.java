@@ -5,6 +5,7 @@
  */
 package zw.co.hitrac.sas.web.pages;
 
+
 import org.apache.wicket.markup.html.basic.Label;
 import org.apache.wicket.markup.html.link.Link;
 import org.apache.wicket.markup.html.list.ListItem;
@@ -14,6 +15,9 @@ import zw.co.hitrac.sas.SaSPageParametersUtil;
 import zw.co.hitrac.sas.business.domain.Subject;
 import zw.co.hitrac.sas.web.model.SubjectListModel;
 
+import org.apache.wicket.request.mapper.parameter.PageParameters;
+
+
 /**
  *
  * @author tndangana
@@ -22,6 +26,7 @@ public class SubjectListPage extends TemplatePage {
 
     public SubjectListPage(PageParameters pageParameter) {
         super(pageParameter);
+
         add(new Link("createNewPage") {
             
             @Override
@@ -59,6 +64,7 @@ public class SubjectListPage extends TemplatePage {
         return l;
     };
     
+
 
 
 

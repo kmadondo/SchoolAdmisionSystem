@@ -10,7 +10,9 @@ import org.apache.wicket.markup.html.form.TextField;
 import org.apache.wicket.markup.html.panel.FeedbackPanel;
 import org.apache.wicket.model.CompoundPropertyModel;
 import org.apache.wicket.request.mapper.parameter.PageParameters;
+
 import zw.co.hitrac.sas.SaSPageParametersUtil;
+
 import zw.co.hitrac.sas.business.domain.Gender;
 import zw.co.hitrac.sas.web.model.GenderModel;
 
@@ -52,8 +54,10 @@ public class GenderEditPage extends TemplatePage {
     }
 
     private void createModel(PageParameters pageParameter) {
+
          Long id = SaSPageParametersUtil.extractId(pageParameter);
         genderModel = new GenderModel(id);
+
     }
 
 }

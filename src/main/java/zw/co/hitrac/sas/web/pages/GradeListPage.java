@@ -5,6 +5,7 @@
  */
 package zw.co.hitrac.sas.web.pages;
 
+
 import static org.apache.wicket.Component.PARENT_PATH;
 import org.apache.wicket.markup.html.basic.Label;
 import org.apache.wicket.markup.html.link.Link;
@@ -15,6 +16,9 @@ import zw.co.hitrac.sas.SaSPageParametersUtil;
 import zw.co.hitrac.sas.business.domain.Grade;
 import zw.co.hitrac.sas.web.model.GradeListModel;
 
+import org.apache.wicket.request.mapper.parameter.PageParameters;
+
+
 /**
  *
  * @author tndangana
@@ -23,6 +27,7 @@ public class GradeListPage  extends TemplatePage  {
 
     public GradeListPage(PageParameters pageParameter) {
         super(pageParameter);
+
         add(new Link("createGradePage") {
             
             @Override
@@ -62,5 +67,6 @@ public class GradeListPage  extends TemplatePage  {
     
 
     
+
     
 }
